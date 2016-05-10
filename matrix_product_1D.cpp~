@@ -142,4 +142,3 @@ int product_matrix(int size, int N, double *array1, double *array2, double *arra
       printf("\n");
    }
 }
-
