@@ -1,6 +1,6 @@
-鍵盤ctrl+alt+t                      啟動terminal
 http://airfishqi.blogspot.tw/2014/04/github-git-add-p-git-stash.html       github一些指令
 -------------------------------------------------------------------------------------------
+鍵盤ctrl+alt+t                      啟動terminal
 sudo apt-get update                 用來取得遠端更新伺服器的套件檔案清單
 sudo apt-get -y dist-upgrade        更新套件
 sudo apt-get clean                  清除更新時所下載回來的更新(安裝)檔案
@@ -40,3 +40,6 @@ octave *.m                              執行.m檔
 clear                                   清空螢幕
 sudo rmdir -rf 123                      要刪除 123 資料夾和它底下的所有檔案及子資料夾
 -a                                      全部的檔案，連同隱藏檔( 開頭為 . 的檔案) 一起列出來(常用)
+git add -A                              stages All
+git add .                               stages new and modified, without deleted
+git add -u                              stages modified and deleted, without new
