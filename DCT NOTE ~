@@ -20,3 +20,4 @@ x_n要擺在2n+1的位置
 Output改成只輸出實部
 第一項乘上1/sqrt(N)
 其他項乘上sqrt(2)/sqrt(N)
+
