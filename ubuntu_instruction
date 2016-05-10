@@ -1,0 +1,39 @@
+鍵盤ctrl+alt+t                 啟動terminal
+sudo apt-get update            用來取得遠端更新伺服器的套件檔案清單
+sudo apt-get -y dist-upgrade   更新套件
+sudo apt-get clean             清除更新時所下載回來的更新(安裝)檔案
+sudo hwclock -w                將硬體時間與系統時間同步
+sudo apt-get install           安裝套件
+sudo shutdown -h now           關機並關電源
+sudo poweroff                  重新開機
+ls                             觀看清單
+mkdir                          建立資料夾
+rmdir                          刪除資料夾
+[tab]                          找尋所有可能
+cd *                           進目錄
+cd ..                          出目錄
+cd                             跳到頂層
+gedit *                        建立檔案
+g++                            編譯cpp檔（a.out）
+g++ * -o name                  編譯cpp檔且out為name
+nano                           編輯
+./*                            執行.out檔(不加空格)
+more *                         觀看內容
+sudo reboot                    重開機
+ssh                            遠端
+rm *                           刪除
+rm -r *                        刪除目錄
+rm -rf *                       刪除被保護寫入的目錄
+code --help                    查詢code指令內容
+git clone 專題網址              把git上的專題資料夾拉至當前cd位置
+cp * * ~/目標位置               複製幾個（2個）檔案至xx資料夾
+mv * * ~/                      移動
+mv * *                         更名
+git add -i                     客製指令
+git add -A                     更新全部檔案（要先進到該資料夾
+git commit -m "命名"           為該動作（該add）命名
+git push                       將add和commit推上github
+octave *.m                     執行.m檔
+clear                          清空螢幕
+sudo rmdir -rf 123             要刪除 123 資料夾和它底下的所有檔案及子資料夾
+-a                             全部的檔案，連同隱藏檔( 開頭為 . 的檔案) 一起列出來(常用)
