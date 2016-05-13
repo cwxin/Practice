@@ -61,12 +61,9 @@ int output_matrix(double *Q, int N)
 
 int Orthogonal_Unitization(double *Q, double *R, double *lengh, int N)
 {
-   int i, t, t1, t2, t3;
-   double temp;
+   int i, j, t, k, t2, t3;
+   double temp, inner;
    t=0;
-   t1=0;
-   t2=1;
-   t3=0;
    temp=0.0;
    inner=0.0;
    
@@ -85,14 +82,31 @@ int Orthogonal_Unitization(double *Q, double *R, double *lengh, int N)
    
    while(t<N-1)
    {
-      while(t1<t2)
+      for(j=0;j<t+1;j++)
       {
-         t2=t1;
+         t2=j;
          for(i=0;i<N;i++)
          {
-            temp=R[t2]*Q[];         
+            inner=R[j+t2]*Q[t2]+inner;         
+            t2=t2+N;
          }
+         t2=0;
+         for(k=0;k<N;k++)
+         {
+            R[j+t2+1]=Q[j+t2+1]-(inner/pow(lengh[j],2))*R[j+t2+1];
+            t2=t2+N;
+         }
+         t3=0;
+         temp=0.0;
+         for(i=0;i<N;i++)
+         {
+            temp=pow(Q[t3+j+1],2)+temp;
+            t3=t3+N;
+         }
+         lengh[j+1]=sqrt(temp);
+         inner=0.0;
       }
+      t=t+1;
    }  
    
 }
