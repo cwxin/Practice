@@ -44,4 +44,6 @@ sudo rmdir -rf 123                      要刪除 123 資料夾和它底下的�
 git add -A                              stages All
 git add .                               stages new and modified, without deleted
 git add -u                              stages modified and deleted, without new
-ssh math414@140.116.90.220              遠端連線到414的電腦                                      
+ssh math414@140.116.90.220              遠端連線到414的電腦 
+g++ filename.cpp -L\usr\lib -lblas -lm  run blas
+g++ filename.cpp -lfftw3 -lm            run fftw3                        
