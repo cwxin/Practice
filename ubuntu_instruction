@@ -46,4 +46,6 @@ git add .                               stages new and modified, without deleted
 git add -u                              stages modified and deleted, without new
 ssh math414@140.116.90.220              遠端連線到414的電腦 
 g++ filename.cpp -L\usr\lib -lblas -lm  run blas
-g++ filename.cpp -lfftw3 -lm            run fftw3                        
+g++ filename.cpp -lfftw3 -lm            run fftw3
+sudo usermod -G vboxsf -a 使用者名稱    將使用者加入至vboxsf的群組
+rm --help                               查一些-配的單字符號              
