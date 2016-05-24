@@ -1,0 +1,3 @@
+Data:#pragma acc data copyin(   ) copyout(   )
+
+parallel:#pragrma acc

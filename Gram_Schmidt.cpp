@@ -4,6 +4,8 @@
 
 int input_matrix(double *Q, int N);
 int output_matrix(double *Q, int N);
+int Orthogonal_Unitization(double *Q, double *R, double *lengh, int N);
+int output_matrix1(double *R, int N);
 
 int main()
 {
@@ -20,6 +22,8 @@ int main()
 
    input_matrix(Q, N);
    output_matrix(Q, N);
+   Orthogonal_Unitization(Q, R, lengh, N);
+   output_matrix1(R, N);   
 }
 
 int input_matrix(double *Q, int N)
@@ -59,6 +63,25 @@ int output_matrix(double *Q, int N)
    }
 }
 
+int output_matrix1(double *R, int N)
+{
+   int i, t1, t2;
+   t1=0;
+   t2=0;
+
+   printf("A=\n");
+   while(t1<N)
+   {
+      for(i=0;i<N;i++)
+      {
+         printf("%.2f   ", R[i+t2]);
+      }
+      t1=t1+1;
+      t2=t2+N;
+      printf("\n");
+   }
+}
+
 int Orthogonal_Unitization(double *Q, double *R, double *lengh, int N)
 {
    int i, j, t, k, t2, t3;
@@ -74,7 +97,7 @@ int Orthogonal_Unitization(double *Q, double *R, double *lengh, int N)
    }
    lengh[0]=sqrt(temp);
    t3=0;
-   for(i=0;<N;i++)
+   for(i=0;i<N;i++)
    {
       R[t3]=Q[t3];
       t3=t3+N;
@@ -107,7 +130,6 @@ int Orthogonal_Unitization(double *Q, double *R, double *lengh, int N)
          inner=0.0;
       }
       t=t+1;
-   }  
-   
+   }
 }
 
